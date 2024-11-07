@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie-Search</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body id="body">
+    <header>
+        <a href="index.html">
+            <h1 id="title">Movie Search</h1>
+        </a>
+        <form id="form">
+            <input type="text" id="search" placeholder="Search" class="search" />
+        </form>
+    </header>
+
+    <div id="toolbar">
+        <div>
+            Genres:
+            <select id="genres">
+                <option class="genre" value="">All Genres</option>
+            </select>
+        </div>
+        <div>
+            Sort By:
+            <select id="sortby">
+                <option class="sort" value="popularity.desc">Popularity ▼</option>
+                <option class="sort" value="release_date.desc">Release Date ▼</option>
+                <option class="sort" value="revenue.desc">Earnings ▼</option>
+            </select>
+        </div>
+        <div>
+            Year:
+            <input id="year" type="number" min="1900" max="2099" step="1" value="2024" />
+        </div>
+    </div>
+
+    <main id="main"></main>
+
+    <div class="pagination">
+        <button id="btn_prev" onclick="prevPage()" class="active2"><i class="fas fa-angle-left"></i></button>
+        <button id="btn_next" onclick="nextPage()" class="active2"><i class="fas fa-angle-right"></i></button>
+    </div>
+
+    <footer>
+        <p>Made with ❤ by
+            <a href="https://github.com/Pratyusha-Malapati" target="_blank" rel="noopener noreferrer">Pratyusha</a>
+            <br>Powered by: <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer"><br><img width="50" src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="The Movie DB (TMDB)" srcset=""></a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
